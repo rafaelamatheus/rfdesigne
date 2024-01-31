@@ -7,14 +7,16 @@
     <title>WEBSITE-NAME</title>
 </head>
 <body>
-    <iframe src="https://rfdesigne2.wixsite.com/rf-designe" style="position: fixed;    left: 0px;    top: -51px;    width: 100%;    height: 108%;">
-    </iframe>
+    <iframe src="https://jrplayconect02.wixsite.com/jrplay-game" style="position: fixed; left: 0px; top: -51px; width: 100%; height: 108%;"></iframe>
 
-<script>
-    if (window.innerWidth < 768){
-        window.location.href = "/mobile.html";
-    }
-</script>
-
+    <script>
+        if (window.innerWidth < 768) {
+            // Redireciona para a versão móvel do site
+            window.location.href = "/mobile.html";
+        } else {
+            // Mantém o iframe para visualização em desktop
+            document.querySelector('iframe').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
